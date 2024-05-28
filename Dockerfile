@@ -1,4 +1,4 @@
 FROM openjdk:17-jdk-slim
 WORKDIR /opt
-COPY target/*.jar /otp/app.jar
+COPY target/*.jar /opt/app.jar
 ENTRYPOINT exec java $JAVA_OPTS -jar app.jar
